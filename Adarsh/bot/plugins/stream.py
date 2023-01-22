@@ -108,7 +108,7 @@ async def private_receive_handler(c: Client, m: Message):
 
 <b>📦 ғɪʟᴇ sɪᴢᴇ :- </b> <i><b>{}</b></i>
 
-<b>💌 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :- </b> <i><b>{}</b></i>
+<b>💌 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :- </b> <i><b>f"https://url.mysteryfacts.xyz/st?api=47b8f21cad30ded04afc99547130e71944e3c0d7&url={online_link}"</b></i>
 
 
 
@@ -157,7 +157,7 @@ async def channel_receive_handler(bot, broadcast):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                     InlineKeyboardButton('⚡ ᴅᴏᴡɴʟᴏᴀᴅ ⚡', f"https://url.mysteryfacts.xyz/st?api=47b8f21cad30ded04afc99547130e71944e3c0d7&url={online_link}")] 
+                     InlineKeyboardButton('⚡ ᴅᴏᴡɴʟᴏᴀᴅ ⚡', {online_link}")] 
                 ]
             )
         )
