@@ -50,7 +50,7 @@ async def private_receive_handler(c: Client, m: Message):
     if MY_PASS:
         check_pass = await pass_db.get_user_pass(m.chat.id)
         if check_pass== None:
-            await m.reply_text("ʟᴏɢɪɴ ғɪʀsᴛ ᴜsɪɴɢ /login ᴄᴍᴅ(ᴛʏᴘᴇ /login)  \n\n for password send 10rs to `sharundas123@ybl` and send screen shot to @kwicadmin \n\n (for running bot need contributions..unwanted message = ban + report)")
+            await m.reply_text("ʟᴏɢɪɴ ғɪʀsᴛ ᴜsɪɴɢ /login ᴄᴍᴅ(ᴛʏᴘᴇ /login)  \n\n for password contact @CinemaDudes_support_bot \n\n (for running bot need contributions..unwanted message = ban + report)")
             return
         if check_pass != MY_PASS:
             await pass_db.delete_user(m.chat.id)
@@ -96,7 +96,7 @@ async def private_receive_handler(c: Client, m: Message):
         log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
         stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         
-        online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+        online_link = f"https://url.mysteryfacts.xyz/st?api=b2c986a098b577d34eaca43ba23e6cacda0d5ef8&url={Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
        
         
         
