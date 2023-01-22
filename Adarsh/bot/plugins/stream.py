@@ -120,7 +120,7 @@ async def private_receive_handler(c: Client, m: Message):
             
             quote=True,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⚡ ᴡᴀᴛᴄʜ ⚡", f"https://url.mysteryfacts.xyz/st?api=47b8f21cad30ded04afc99547130e71944e3c0d7&url={stream_link}"), #Stream Link
+            reply_markup=InlineKeyboardMarkup([[
                                                 InlineKeyboardButton('⚡ ᴅᴏᴡɴʟᴏᴀᴅ ⚡', f"https://url.mysteryfacts.xyz/st?api=47b8f21cad30ded04afc99547130e71944e3c0d7&url={online_link}")]]) #Download Link
         )
     except FloodWait as e:
@@ -156,7 +156,7 @@ async def channel_receive_handler(bot, broadcast):
             id=broadcast.id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("⚡ ᴡᴀᴛᴄʜ ⚡", f"https://url.mysteryfacts.xyz/st?api=47b8f21cad30ded04afc99547130e71944e3c0d7&url={stream_link}"),
+                    [
                      InlineKeyboardButton('⚡ ᴅᴏᴡɴʟᴏᴀᴅ ⚡', f"https://url.mysteryfacts.xyz/st?api=47b8f21cad30ded04afc99547130e71944e3c0d7&url={online_link}")] 
                 ]
             )
