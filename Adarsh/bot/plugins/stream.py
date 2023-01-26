@@ -50,7 +50,7 @@ async def private_receive_handler(c: Client, m: Message):
     if MY_PASS:
         check_pass = await pass_db.get_user_pass(m.chat.id)
         if check_pass== None:
-            await m.reply_text("ʟᴏɢɪɴ ғɪʀsᴛ ᴜsɪɴɢ /login ᴄᴍᴅ(ᴛʏᴘᴇ /login)  \n\n for password contact @CinemaDudes_support_bot \n\n (for running bot need contributions..unwanted message = ban + report)")
+            await m.reply_text("ʟᴏɢɪɴ ғɪʀsᴛ ᴜsɪɴɢ /login ᴄᴍᴅ(ᴛʏᴘᴇ /login)  \n\n for password contact @Pravinboopathi_contactbot \n\n (for running bot need contributions..unwanted message = ban + report)")
             return
         if check_pass != MY_PASS:
             await pass_db.delete_user(m.chat.id)
