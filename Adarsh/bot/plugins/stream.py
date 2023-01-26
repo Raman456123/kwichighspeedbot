@@ -15,7 +15,7 @@ from Adarsh.utils.file_properties import get_name, get_hash, get_media_file_size
 db = Database(Var.DATABASE_URL, Var.name)
 
 
-MY_PASS = os.environ.get("MY_PASS",None)
+MY_PASS = os.environ.get("MY_PASS",81182378)
 pass_dict = {}
 pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 
@@ -24,7 +24,7 @@ pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 async def login_handler(c: Client, m: Message):
     try:
         try:
-            ag = await m.reply_text("Now send me password.\n\n for password send 10rs to `sharundas123@ybl` and send screen shot to @kwicadmin \n\n (for running bot need contributions..unwanted message = ban + report)")
+            ag = await m.reply_text("Now send me password.\n\n for password contact -  @Pravinboopathi_contactbot \n\n (For password you need to pay us ₹50,only message us if you are ready to pay..unwanted message = ban + report)")
             _text = await c.listen(m.chat.id, filters=filters.text, timeout=90)
             if _text.text:
                 textp = _text.text
